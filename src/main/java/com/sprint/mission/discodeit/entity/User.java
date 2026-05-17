@@ -1,10 +1,11 @@
 package com.sprint.mission.discodeit.entity;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 import static java.lang.System.currentTimeMillis;
 
-public class User {
+public class User implements Serializable {
     private UUID id;
     private Long createdAt;
     private Long updatedAt;
