@@ -9,11 +9,9 @@ import java.util.UUID;
 public class UserStatus {
 
     private UUID id;
-
     private UUID userId;
 
     private Instant lastActiveAt;
-
     private Instant createdAt;
     private Instant updatedAt;
 

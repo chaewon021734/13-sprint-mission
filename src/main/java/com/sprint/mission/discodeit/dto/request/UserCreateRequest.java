@@ -1,14 +1,17 @@
 package com.sprint.mission.discodeit.dto.request;
 
-import java.util.UUID;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-public class UserRequest {
-    private UUID userId;
+@Getter
+@AllArgsConstructor
+public class UserCreateRequest {
 
     private String username;
     private String email;
     private String password;
 
+    // 선택적 프로필 이미지
     private String fileName;
     private String contentType;
     private byte[] data;

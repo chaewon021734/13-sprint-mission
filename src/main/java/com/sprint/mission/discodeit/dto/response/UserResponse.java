@@ -12,4 +12,16 @@ public class UserResponse {
     private String username;
     private String email;
     private boolean online;
+
+    public UserResponse(
+            UUID id,
+            String username,
+            String email,
+            boolean online
+    ) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.online = online;
+    }
 }
